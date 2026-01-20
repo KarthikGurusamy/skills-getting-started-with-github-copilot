@@ -86,19 +86,24 @@ section h3 {
   margin: 10px 0 0 0;
 }
 
-.participants-list li {
-  padding: 6px 0 6px 20px;
-  position: relative;
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
   font-size: 14px;
   color: #555;
 }
 
-.participants-list li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #0066cc;
-  font-weight: bold;
+.delete-icon {
+  margin-left: 12px;
+  color: #c00;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #f33;
 }
 
 .no-participants {
